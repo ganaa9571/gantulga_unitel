@@ -1,0 +1,280 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none;
+}
+body {
+  color: #f2eded;
+}
+.menu {
+  width: 100%;
+  height: 20px;
+  background-color: rgb(70, 70, 70);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .deed {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.menu .deed .dd1 {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  font-size: 17px;
+  letter-spacing: 2s solid 30px;
+  color: white;
+  margin: auto;
+  justify-content: space-around;
+}
+.menu .deed .dd2 {
+  width: 20%;
+  height: 100%;
+  font-size: 15px;
+  letter-spacing: 1s solid 5px;
+  margin-left: 150px;
+  color: white;
+}
+.menu .deed .dd1 p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dund {
+  width: 70%;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.dund .logo {
+  width: 30%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.dund .logo img {
+  width: 100%;
+  height: 100%;
+}
+.dund .logo P {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.dund .logo:hover {
+  color: rgb(0, 170, 3);
+  /* background-color: green; */
+  border-bottom: 3px solid rgb(34, 255, 45);
+}
+.dund .logo .dda {
+  width: 300px;
+  height: 0;
+  background: rgb(252, 252, 252);
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.8s;
+  margin-top: 3px;
+  z-index: 999;
+}
+.dund .logo:hover .dda {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.3s;
+  height: 450px;
+}
+.dund .logo .dda ul li a:hover {
+  transition: all 1s;
+  /* background-color: rgb(34, 255, 45); */
+}
+#check1 {
+  display: none;
+}
+.dund .logo2 {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.dund .logo2 .n1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+}
+.reg {
+  width: 370px;
+  height: 343px;
+  background: #fff;
+  z-index: 999;
+}
+#check2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dund .logo2 .n1 .reg .close #check2:checked ~ .n1 {
+  visibility: visible;
+  opacity: 1s;
+}
+.dund .logo2 .n1 .reg .deed {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+.dund .logo2 .n1 .reg .dood {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.dund .logo2 #check1:checked ~ .n1 {
+  /* display: flex; */
+  visibility: visible;
+  opacity: 1;
+}
+
+.dund .logo .dda ul li {
+  width: 100%;
+  height: 45px;
+  transition: all 0.1s;
+}
+.dund .logo .dda ul li a {
+  color: rgb(5, 5, 5);
+}
+.bichig {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  background-color: #78c81e;
+  align-items: center;
+}
+.bichig .bbg {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gga {
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  margin-top: 250px;
+  width: 100px;
+  height: 150px;
+  font-size: 30px;
+  right: 0;
+  /* height: fit-content; */
+}
+.zurag {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #78c81e; */
+}
+.zurag ul {
+  width: 70%;
+  height: fit-content;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.zurag ul li {
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+.zurag ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.zurag ul li:hover a {
+  background-color: #78c81e;
+  transition: all 2s;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+@media (max-width: 1020px) {
+  .menu {
+    visibility: hidden;
+  }
+  .dund {
+    visibility: hidden;
+  }
+  .tugsgul {
+    visibility: hidden;
+  }
+  .gga {
+    visibility: hidden;
+  }
+}
+.zurag ul li a p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 640px) {
+  .zurag ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.tugsgul {
+  width: 100%;
+  background-color: #363636;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.tugsgul .tt {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+#check3 {
+  display: none;
+}
